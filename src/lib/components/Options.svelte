@@ -3,6 +3,7 @@
 	import { showPage } from '$lib/shared';
     import { fade } from 'svelte/transition';
     import { goto } from '$app/navigation';
+    import { trapFocus } from '$lib/actions.svelte.js'
 
     const OPTION_LETTERS = ['A', 'B', 'C', 'D'];
     let {subject, answer, next, score, index, options} = $props();
@@ -75,9 +76,9 @@
 </script>
 
 {#key index}
-<div class="answer">
-    <ul class="choices">
-        {#each currentOptions as option, i (i)} 
+<div class="answer" use:trapFocus>
+        <ul class="choices">
+            {#each currentOptions as option, i (i)} 
         <button 
                 bind:this={choiceRefs[i]} 
                 class="choice" 
@@ -91,14 +92,14 @@
         {/each}
     </ul>
     
-    <button class="submit"
+    <button class="submit outline" 
         aria-disabled={submitDisabled} 
         disabled={submitDisabled} 
         onclick={(e) => handleSubmit(e)}>
-    Submit Answer
+        Submit Answer
     </button>
-
-    <div class="error {noSelectionErrorHidden ? 'hidden' : null}">
+    
+    <div tabindex="-1" class="error {noSelectionErrorHidden ? 'hidden' : null}">
         <div class="icon"></div><p>Please Select an answer</p>
     </div> 
 </div>
@@ -166,6 +167,11 @@ span {
     box-shadow: 0 0.3rem 0.3rem 0.3rem var(--color-shadow);
     cursor: pointer;
 }
+
+/* .submit:focus, .submit:hover {
+    outline: .15rem solid var(--colors-purple-600);
+    outline-offset: .15rem;
+} */
 
 .choice:disabled {
     cursor: not-allowed;

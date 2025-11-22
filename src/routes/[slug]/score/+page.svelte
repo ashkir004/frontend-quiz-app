@@ -14,7 +14,7 @@
             <p class="score">{data.score}</p>
             <small>out of 10</small>
         </div>
-        <button class="play-again" onclick={() => {
+        <button class="play-again outline" onclick={() => {
             goto(`/${data.subject.title.toLowerCase()}/`)
         }}>Play Again</button>
     </div>

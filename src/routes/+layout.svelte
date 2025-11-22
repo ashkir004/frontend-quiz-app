@@ -94,6 +94,7 @@
         text-decoration: none;
     }
 
+    .subject:focus, .subject:hover,
     .choice:focus,
     .choice:hover, 
     .choice.selected {

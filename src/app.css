@@ -44,7 +44,6 @@
 
 :root {
     
-    --icon-js-local: url("/static/images/icon-js.svg");
     --icon-js: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543150/icon-js_rlfoh7.svg");
     --icon-html: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543149/icon-html_rziwjf.svg");
     --icon-css: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543148/icon-css_rdukzc.svg");
@@ -138,4 +137,9 @@
 
 body {
     background-color: var(--background-color);
+}
+
+.outline:focus, .outline:hover {
+    outline: .15rem solid var(--colors-purple-600);
+    outline-offset: .15rem;
 }

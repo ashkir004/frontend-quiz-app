@@ -27,15 +27,15 @@
 
 <div class="toggle-theme">
 
-    <button class="icon sun" onclick={() => setTheme('light')} aria-label="light mode"></button>
+    <button class="icon sun outline" onclick={() => setTheme('light')} aria-label="light mode"></button>
     
     <label class="switch">
         <input type="checkbox" role="switch" id="theme-switch" aria-checked='{theme === 'dark'}' onclick={toggleTheme} 
-            checked={theme === 'dark'}>
+            checked={theme === 'dark'} tabindex="-1">
         <span class="slider"></span>
     </label>
     
-    <button class="icon moon" onclick={() => setTheme('dark')} aria-label="dark mode"></button>
+    <button class="icon moon outline" onclick={() => setTheme('dark')} aria-label="dark mode"></button>
 </div>
 
 
@@ -46,7 +46,6 @@
     flex-direction: row;
     align-items: flex-start;
     gap: var(--s-200);
-    /* background-color: bisque; */
 }
 
 .icon {
@@ -73,10 +72,10 @@
   --switch-bg: var(--colors-purple-600);
   --switch-thumb-size: var(--s-250);
 
-  position: relative;
-  display: inline-block;
-  width: var(--switch-width);
-  height: var(--switch-height);
+    position: relative;
+    display: inline-block;
+    width: var(--switch-width);
+    height: var(--switch-height);
 }
 
 .switch input {
