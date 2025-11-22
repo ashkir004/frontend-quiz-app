@@ -4,7 +4,6 @@
 
 	import ToggleTheme from "$lib/components/ToggleTheme.svelte";
 	let { children, data } = $props();
-    // $inspect(data);
 
 </script>
 
@@ -49,7 +48,6 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        /* background-color: yellowgreen; */
     }
 
     .topic {

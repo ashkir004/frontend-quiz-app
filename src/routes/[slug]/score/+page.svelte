@@ -14,9 +14,8 @@
             <p class="score">{data.score}</p>
             <small>out of 10</small>
         </div>
-        <button class="play-again outline" onclick={() => {
-            goto(`/${data.subject.title.toLowerCase()}/`)
-        }}>Play Again</button>
+
+        <a class="play-again outline" href="/">Play Again</a>
     </div>
 </article>
 
@@ -24,6 +23,9 @@
 <style>
 
     .play-again {
+        display: block;
+        text-align: center;
+        text-decoration: none;
         width: 100%;
         background-color: var(--colors-purple-600);
         color: var(--colors-white);
