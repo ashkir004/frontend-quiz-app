@@ -1,0 +1,141 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --s-100: calc(8 / 16 * 1rem);
+    --s-200: calc(16 / 16 * 1rem);
+    --s-250: calc(20 / 16 * 1rem);
+    --s-300: calc(24 / 16 * 1rem);
+    --s-350: calc(28 / 16 * 1rem);
+    --s-400: calc(32 / 16 * 1rem);
+    --s-500: calc(40 / 16 * 1rem);
+    --s-600: calc(48 / 16 * 1rem);
+    --s-700: calc(56 / 16 * 1rem);
+    --s-800: calc(64 / 16 * 1rem);
+    --s-1600: calc(128 / 16 * 1rem);
+    --s-1800: calc(144 / 16 * 1rem);
+    --s-2300: calc(184 / 16 * 1rem);
+
+    --colors-black: rgba(0, 0, 0, 1);
+    --colors-white: rgba(255, 255, 255, 1);
+    --colors-grey-50: rgba(244, 246, 250, 1);
+    --colors-grey-500: rgba(98, 108, 127, 1);
+    --colors-blue-50: rgba(235, 240, 255, 1);
+    --colors-blue-100: rgba(237, 241, 249, 1);
+    --colors-blue-500: rgba(48, 106, 255, 1);
+    --colors-green-100: rgba(224, 253, 239, 1);
+    --colors-green-500: rgba(47, 216, 135, 1);
+    --colors-purple-100: rgba(246, 231, 255, 1);
+    --colors-purple-600: rgba(167, 41, 245, 1);
+    --colors-orange-50: rgba(255, 245, 237, 1);
+    --colors-orange-400: rgba(255, 126, 53, 1);
+    --colors-red-500: rgba(238, 84, 84, 1);
+    --colors-blue-300: rgba(171, 193, 225, 1);
+    --colors-blue-900: rgba(49, 62, 81, 1);
+    --colors-blue-950: rgba(45, 57, 73, 1);
+    --colors-blue-850: rgba(59, 77, 102, 1);
+
+    --radii-12: calc(12 / 16 * 1rem);    
+    --radii-24: calc(24 / 16 * 1rem);    
+}
+
+:root {
+    
+    --icon-js-local: url("/static/images/icon-js.svg");
+    --icon-js: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543150/icon-js_rlfoh7.svg");
+    --icon-html: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543149/icon-html_rziwjf.svg");
+    --icon-css: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543148/icon-css_rdukzc.svg");
+    --icon-accessibility: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543150/icon-accessibility_kqars2.svg");
+    
+    --icon-correct: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543147/icon-correct_i8bom0.svg");
+    --icon-incorrect: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543150/icon-incorrect_boum3l.svg");
+    
+    --icon-error: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543156/icon-error_h1bedb.svg");
+    
+    --icon-favicon: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543148/favicon-32x32_ujw8qc.png");
+
+
+
+}
+
+
+
+:root[data-theme="light"] {
+    
+    --bg-mobile: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543168/pattern-background-mobile-light_yz6uk4.svg");
+    --bg-tablet: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543169/pattern-background-tablet-light_wianrr.svg");
+    --bg-desktop: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543158/pattern-background-desktop-light_gyhu1r.svg");
+    
+    --icon-sun: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543153/icon-sun-dark_jnpnua.svg");
+    --icon-moon: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543151/icon-moon-dark_slgixl.svg");
+    
+    --background-color: var(--colors-grey-50);
+    --secondary-bg-color: var(--colors-white);
+    --text-color: var(--colors-blue-900);
+    --text-color-small: var(--colors-grey-500);
+    --bg-btn-primary: var(--colors-white);
+    --text-btn-primary: var(--colors-blue-900);
+    --color-shadow: var(--colors-blue-100);
+    --text-color-error: var(--colors-red-500);
+}
+
+:root[data-theme="dark"] {
+    --background-color: var(--colors-blue-900);
+    --secondary-bg-color: var(--colors-blue-850);
+    --bg-btn-primary: var(--colors-blue-850);
+    --text-btn-primary: var(--colors-white);
+    --text-color: var(--colors-white);
+    --text-color-small: var(--colors-blue-300);
+    --color-shadow: var(--colors-blue-950);
+    --text-color-error: var(--colors-white);
+    
+    --bg-mobile: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543168/pattern-background-mobile-dark_d7dhmo.svg");
+    --bg-tablet: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543169/pattern-background-tablet-dark_z7etk3.svg");
+    --bg-desktop: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543158/pattern-background-desktop-dark_qdhkmk.svg");
+    
+    --icon-sun: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543156/icon-sun-light_x6vyyk.svg");
+    --icon-moon: url("https://res.cloudinary.com/dprhoefkg/image/upload/v1762543149/icon-moon-light_bnsw55.svg");
+}
+
+
+:root {
+
+    --text-10: calc(144 / 16 * 1rem);
+    --text-9: calc(88 / 16 * 1rem);
+    --text-8: calc(64 / 16 * 1rem);
+    --text-7: calc(40 / 16 * 1rem);
+    --text-6: calc(36 / 16 * 1rem);
+    --text-5: calc(28 / 16 * 1rem); 
+    --text-4: calc(24 / 16 * 1rem); 
+    --text-3: calc(20 / 16 * 1rem);
+    --text-2: calc(18 / 16 * 1rem);
+    --text-1: calc(14 / 16 * 1rem); 
+
+    --line-height-1: 1;
+    --line-height-2: 1.2;
+    --line-height-3: 1.5;
+}
+
+
+@font-face {
+  font-family: "Rubik";
+  src: url("/src/lib/assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("/src/lib/assets/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+    background-color: var(--background-color);
+}
