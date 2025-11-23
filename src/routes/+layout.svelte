@@ -34,7 +34,7 @@
         color: var(--text-color);
         background-image: var(--bg-mobile);  
         background-repeat: no-repeat;
-        background-position: contain;
+        background-size: cover;
         font-family: "Rubik";
     }
 
@@ -92,9 +92,6 @@
         text-decoration: none;
     }
 
-    .subject:focus-visible, .subject:hover,
-    .choice:focus-visible,
-    .choice:hover, 
     .choice.selected {
         outline: .15rem solid var(--colors-purple-600);
     }
@@ -221,13 +218,14 @@
             gap: var(--s-800);
             padding: 0;
             min-width: 65.55rem;
-            max-width: 65.55rem;
+            /* max-width: 65.55rem; */
             padding-block-end: var(--s-800);
         }
 
 
         header {
-            margin-block-start: var(--s-800);
+            /* margin-block-start: var(--s-800); */
+            margin-block-start: var(--s-1600);
         }
     }
 }
