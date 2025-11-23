@@ -225,8 +225,7 @@
 
 
         header {
-            /* margin-block-start: var(--s-800); */
-            margin-block-start: var(--s-1600);
+            margin-block-start: var(--s-800);
             /* background-color: green; */
         }
     }
