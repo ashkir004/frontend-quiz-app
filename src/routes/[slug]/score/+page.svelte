@@ -59,7 +59,7 @@
             <small>out of 10</small>
         </div>
 
-        <a class="play-again outline" href="/">Play Again</a>
+        <a class="play-again outline outline-offset" href="/">Play Again</a>
     </div>
 </article>
 

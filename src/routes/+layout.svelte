@@ -92,8 +92,8 @@
         text-decoration: none;
     }
 
-    .subject:focus, .subject:hover,
-    .choice:focus,
+    .subject:focus-visible, .subject:hover,
+    .choice:focus-visible,
     .choice:hover, 
     .choice.selected {
         outline: .15rem solid var(--colors-purple-600);

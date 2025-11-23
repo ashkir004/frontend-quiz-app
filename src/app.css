@@ -139,7 +139,14 @@ body {
     background-color: var(--background-color);
 }
 
-.outline:focus, .outline:hover {
+.outline:focus {
+    outline: none;
+}
+
+.outline:focus-visible, .outline:hover {
     outline: .15rem solid var(--colors-purple-600);
+}
+
+.outline-offset {
     outline-offset: .15rem;
 }

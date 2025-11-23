@@ -27,11 +27,11 @@
 
 <div class="toggle-theme">
 
-    <button class="icon sun outline" onclick={() => setTheme('light')} aria-label="light mode"></button>
+    <button class="icon sun outline outline-offset" onclick={() => setTheme('light')} aria-label="light mode"></button>
     
     <label class="switch">
         <input type="checkbox" role="switch" id="theme-switch" aria-checked='{theme === 'dark'}' onclick={toggleTheme} 
-            checked={theme === 'dark'} tabindex="-1">
+            checked={theme === 'dark'}>
         <span class="slider"></span>
     </label>
     

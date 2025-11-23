@@ -10,10 +10,10 @@
     </div>
     
     <ul class="subjects">
-        <li><a href="/html" class="subject html"><span></span>HTML</a></li>
-        <li><a href="/css" class="subject css"><span></span>CSS</a></li>
-        <li><a href="/javascript" class="subject javascript"><span></span>JavaScript</a></li>
-        <li><a href="/accessibility" class="subject accessibility"><span></span>Accessibility</a></li>
+        <li><a href="/html" class="subject outline html"><span></span>HTML</a></li>
+        <li><a href="/css" class="subject outline css"><span></span>CSS</a></li>
+        <li><a href="/javascript" class="subject outline javascript"><span></span>JavaScript</a></li>
+        <li><a href="/accessibility" class="subject outline accessibility"><span></span>Accessibility</a></li>
     </ul>
 
 </article>

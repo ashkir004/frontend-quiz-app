@@ -79,7 +79,7 @@
             {#each currentOptions as option, i (i)} 
         <button 
                 bind:this={choiceRefs[i]} 
-                class="choice" 
+                class="choice outline" 
                 data-option={option} 
                 disabled={optionsDisabled}
                 onclick={() => handleSelected(i)}>
@@ -90,7 +90,7 @@
         {/each}
     </ul>
     
-    <button class="submit outline" 
+    <button class="submit outline outline-offset" 
         aria-disabled={submitDisabled} 
         disabled={submitDisabled} 
         onclick={(e) => handleSubmit(e)}>
