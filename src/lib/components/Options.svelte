@@ -1,6 +1,5 @@
 
 <script>
-	import { showPage } from '$lib/shared';
     import { fade } from 'svelte/transition';
     import { goto } from '$app/navigation';
     import { trapFocus } from '$lib/actions.svelte.js'
@@ -19,7 +18,6 @@
 
 
     function handleSelected(i) {
-        console.log(choiceRefs);
         choice = currentOptions[i];
         noSelectionErrorHidden = true;
         submitDisabled = false;
@@ -56,7 +54,7 @@
         } else {
             setTimeout(() => {
                 next(correct);    
-            }, 2000);
+            }, 1500);
         }
 
     }

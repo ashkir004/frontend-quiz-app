@@ -29,5 +29,8 @@
 		"svelte": "^5.41.0",
 		"svelte-cloudinary": "^2.3.1",
 		"vite": "^7.1.10"
+	},
+	"dependencies": {
+		"canvas-confetti": "^1.9.4"
 	}
 }
