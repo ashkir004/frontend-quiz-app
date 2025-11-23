@@ -46,6 +46,7 @@
     flex-direction: row;
     align-items: flex-start;
     gap: var(--s-200);
+    padding: var(--s-250) 0;
 }
 
 .icon {

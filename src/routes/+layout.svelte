@@ -55,7 +55,8 @@
         flex-direction: row;
         gap: var(--s-200);
         align-items: center;
-        padding: var(--s-200) 0;
+        /* padding: var(--s-200) 0; */
+        padding: 0;
     }
 
     small {
@@ -191,7 +192,7 @@
         
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 64.1rem) {
         .subjects, .choices {
             gap: var(--s-200);
         }
@@ -218,7 +219,7 @@
             gap: var(--s-800);
             padding: 0;
             min-width: 65.55rem;
-            /* max-width: 65.55rem; */
+            max-width: 70rem;
             padding-block-end: var(--s-800);
         }
 
@@ -226,6 +227,7 @@
         header {
             /* margin-block-start: var(--s-800); */
             margin-block-start: var(--s-1600);
+            /* background-color: green; */
         }
     }
 }
