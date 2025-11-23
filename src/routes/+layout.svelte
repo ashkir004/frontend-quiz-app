@@ -194,7 +194,7 @@
 
     @media (min-width: 64.1rem) {
         .subjects, .choices {
-            gap: var(--s-200);
+            gap: var(--s-300);
         }
 
         .subject, .choice {
@@ -225,7 +225,7 @@
 
 
         header {
-            margin-block-start: var(--s-800);
+            margin-block-start: var(--s-900);
             /* background-color: green; */
         }
     }
