@@ -7,7 +7,6 @@
     let { data } = $props();
     let score = $state(data.score * 1);
 
-
     function celebrate() {
         let duration = 15 * 1000;
         let animationEnd = Date.now() + duration;
